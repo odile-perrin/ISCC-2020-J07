@@ -5,12 +5,11 @@ echo '<p>' .$date1->format('Y-m-d H:i:s').'</p>';
 $date2 = new DateTime();
 echo'<p>'.$date2->format('2020-06-22 9:00:00').'</p>';
 
-$intervale = $date2->diff($date1);
-echo $intervale->format('%R%a days');
+$interval = $date2->diff($date1);
+echo $interval->format('%r%a days');
 
-$intervale = $date2->diff($date1);
-echo $intervale->format('%R%a days');
-echo '<p>'.$intervale->format(' %a days');
-echo $intervale->format('%H hours');
-echo $intervale->format(' %i minutes'). '</p>';
+$interval = $date2->diff($date1);
+echo '<p>'. $interval->format(' %a days');
+echo $interval->format(' %H hours');
+echo $interval->format(' %i minutes'). '</p>';
 ?>
